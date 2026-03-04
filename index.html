@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freeride</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="freeride.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="freeride.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <img src="logo/logo2.png" alt="freeride" class="logo" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#edzes">Edzéseinkről</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#palyak">Pályák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kepek">Képek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactForm">Jelentkezés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--header-->
+    <section class="hero-section d-flex text-center">
+        <div class="hero-content container">
+            <img src="logo/logo1.png" alt="Freeride Suli Logo" class="hero-logo mb-3">
+            <h1 class="hero-title">FreeRide Suli</h1>
+            <p class="hero-subtitle text-center">Fejlődj technikában. Légy magabiztos a terepen.</p>
+        </div>
+    </section>
+
+    <!--Bemutatkozás-->
+    <section class="container" id="edzes">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Edzéseinkről</h3>
+                <p>
+                    A nevem <b>Zöld Gergő</b> és már fiatal korom
+                    óta az extrém sportok világa határozza meg az életemet. Több éves
+                    BMX-es tapasztalat, versenyháttér és magas szintű bike control tudás
+                    áll mögöttem, amelyre ma már tudatos edzői szemlélettel építek.
+                </p>
+                <p>
+                    Hiszek abban, hogy a fejlődés nem a vakmerőségen múlik, hanem a
+                    kontrollon, a technikai precizitáson és a tudatos gyakorláson. Az
+                    edzéseimen nemcsak trükköket és technikákat tanítok, hanem azt is,
+                    hogyan olvasd a terepet, hogyan építs stabil alapokat, és hogyan
+                    lépj túl a saját határaidon biztonságosan.
+                </p>
+                <p>
+                    A Freestyle MTB tábor célja, hogy a bringázást ne csak
+                    élvezetesebbé, hanem magabiztosabbá és biztonságosabbá is tegye.
+                    Kiemelt figyelmet fordítok az egyéni fejlődésre, mert minden bringás
+                    más szinten áll — és mindenki megérdemli a személyre szabott
+                    támogatást.
+                </p>
+                <p>
+                    <b>
+                        A célom az, hogy a tábor végére stabilabb, technikailag
+                        felkészültebb és mentálisan erősebb bringásként térj haza.
+                    </b>
+                </p>
+                <p class="text-center">
+                    <a href="https://www.instagram.com/freeride_suli/" target="_blank" class="btn hero-btn mt-3"><i
+                            class="bi bi-instagram"></i> Kövess Instagramon</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img id="galleryImg" src="IMG/img1.jpg" class="img-fluid rounded shadow my-3"
+                    style="max-height: 400px" />
+                <div>
+                    <button class="custom-btn" id="prev"><i class="bi bi-caret-left-fill"></i></button>
+                    <button class="custom-btn" id="next"><i class="bi bi-caret-right-fill"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Helyszinek-->
+    <section id="palyak">
+        <div class="container">
+            <h3>Pályák</h3>
+            <div class="row">
+                <!-- 1. card -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 custom-card">
+                        <img src="places/etyek.webp" class="card-img-top custom-img" alt="Etyek">
+                        <div class="card-body text-center">
+                            <h5 class="card-title py-3">Etyek Flow Trail 🇭🇺</h5>
+                            <a href="https://webetyek.hu/etyek-flow-trail-hasznalati-utmutato/" target="_blank"
+                                class="custom-btn card-link">Ugrás az oldalra</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. card -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 custom-card">
+                        <img src="places/wexl.webp" class="card-img-top custom-img" alt="Etyek">
+                        <div class="card-body text-center">
+                            <h5 class="card-title py-3">Wexl Trail 🇦🇹</h5>
+                            <a href="https://www.wexltrails.at/hu" target="_blank" class="custom-btn card-link">Ugrás az
+                                oldalra</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. card -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 custom-card">
+                        <img src="places/Kalnica.jpg" class="card-img-top custom-img" alt="Etyek">
+                        <div class="card-body text-center">
+                            <h5 class="card-title py-3">Freeride Bikepark Kálnica 🇸🇰</h5>
+                            <a href="https://www.bikeparkkalnica.sk/en/" target="_blank"
+                                class="custom-btn card-link">Ugrás az
+                                oldalra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Képek-->
+    <section class="container text-center" id="kepek">
+        <h3>Képek</h3>
+        <div class="container picture">
+            <img src="FREERIDE/picture1.jpg" alt="" id="gallery" class="img-fluid rounded shadow my-3 gallery-main-img">
+        </div>
+        <button id="gallery-prev" class="custom-btn mt-2"><i class="bi bi-caret-left-fill"></i></button>
+        <button id="gallery-next" class="custom-btn mt-2"><i class="bi bi-caret-right-fill"></i></button>
+    </section>
+
+    <!--Jelentkezés-->
+    <section id="contactForm" class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-center"><img src="logo/logo2.png" alt="logo2" width="120px"></p>
+                    <h3 class="text-center mb-4 text-white">
+                        Jelentkezés a FreeRide Suliba
+                    </h3>
+                    <form id="registrationForm">
+                        <div class="mb-4">
+                            <label class="form-label text-white">Név *</label>
+                            <input type="text" class="form-control custom-input">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-white">Email *</label>
+                            <input type="email" class="form-control custom-input">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-white">Telefonszám *</label>
+                            <input type="tel" class="form-control custom-input">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-white">Jelentkezés *</label>
+                            <textarea class="form-control custom-input" rows="4"
+                                placeholder="Szia! Szeretnék jelentkezni..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="custom-btn">
+                                Jelentkezem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Kapcsolat-->
+
+    <section class="contact-section1" id="kapcsolat">
+        <div class="container text-center">
+            <h3 class="mb-4" style="color: #fff;">Kapcsolat</h3>
+            <div class="contact-card mx-auto">
+                <ul class="list-unstyled mb-0">
+                    <li class="contact-item">
+                        <i class="bi bi-instagram"></i>
+                        <a href="https://www.instagram.com/freeride_suli/" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="bi bi-envelope-at"></i>
+                        freeridesuli@gmail.com
+                    </li>
+                    <li class="contact-item">
+                        <i class="bi bi-telephone-inbound"></i>
+                        +36 30 XXX YYYY
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Nyíl-->
+    <a href="#" id="scrollBtn" class="scroll">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!--Footer-->
+    <footer class="bg-dark text-white text-center py-4 w-100">
+        <p class="mb-0 text-center">Freeride Suli 2026</p>
+    </footer>
+</body>
+
+</html>
